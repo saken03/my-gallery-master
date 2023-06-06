@@ -1,0 +1,39 @@
+.gallery {
+    display: grid;
+    margin-top: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5%;
+}
+
+.gallery > img {
+    height: 100%;
+    width: 100%;
+    /* object-fit: fill; */
+    border-radius: 15px;
+    transition: height 0.45s, width 0.45s;
+    align-self: center;
+    justify-self: center;
+}
+
+.gallery > img:hover {
+    height: 90%;
+    width: 90%;
+    transition: height 0.45s, width 0.45s;
+    cursor: pointer;
+}
+
+#b {
+    grid-column: span 2;
+}
+
+#c {
+    grid-column: span 2;
+}
+
+#d {
+    grid-column: 3;
+    grid-row: 2 / -1;
+}

@@ -1,0 +1,36 @@
+.header {
+    text-align: center;
+    margin: 0;
+}
+
+.header > img {
+    border-radius: 10%;
+    height: 250px;
+    margin-top: 40px;
+}
+
+.header > img:hover {
+    opacity: 0.9;
+    transition: opacity 0.15s;
+    cursor: pointer;
+}
+
+.name {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: #4E5150;
+}
+
+.location {
+    font-size: 20px;
+    color: #A9A9A9;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 500px) {
+    .header > img {
+        height: 170px;
+    }
+}

@@ -1,0 +1,48 @@
+.reputation {
+    display: flex;
+    /* gap: 50px; */
+    gap: 5%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    justify-content: center;
+    transform: translateX(+2%);
+}
+
+.reputation-cell {
+    margin: 0;
+    background-color: #E5E5E5;
+    border-radius: 30px;   
+    padding: 15px 30px 15px 30px; 
+    text-align: center;
+    transition: padding 0.45s;
+}
+
+.reputation-cell:hover {
+    padding-left: 40px;
+    padding-right: 40px;
+    transition: padding 0.45s;
+    cursor: pointer;
+}
+
+.reputation-cell > p {
+    margin: 0;
+    font-size: 20px;
+    color: #4E5150;
+}
+
+.reputation-cell > p:last-child {
+    color: #BDBDBD;
+}
+
+@media screen and (max-width: 500px) {
+    .reputation-cell {
+        border-radius: 30px;   
+        padding: 10px 20px 10px 20px; 
+        text-align: center;
+        transition: padding 0.45s;    
+    }
+    
+    .reputation-cell > p {
+        font-size: 15px;
+    }
+}
